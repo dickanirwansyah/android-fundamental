@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dicka.spring.fundamental_calculator.MainActivity"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/etMasukkanNilai1"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_textview1"
+        tools:ignore="InefficientWeight" />
+
+    <EditText
+        android:id="@+id/etMasukkanNilai2"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_textView2"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnTambah"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnKali"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnKurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnKurang"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnBagi"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"
+            android:text="@string/textViewHasil"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
